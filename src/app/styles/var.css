@@ -1,0 +1,12 @@
+:root {
+  --header-height: 50px;
+  --footer-height: 100px;
+  --left-side-width: 250px;
+  --right-side-width: 200px;
+
+  --plate-height: 100px;
+  --plate-width: 150px;
+  --plate-margin: 30px;
+
+  --border: 2px dashed #ececec;
+}

@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+}
+
