@@ -1,0 +1,85 @@
+@import url(var.css);
+@import url(main.css);
+@import url(plates.css);
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  overflow: hidden;
+  background: #00000045;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-width: calc(var(--plate-width) + var(--plate-margin)*2 + var(--left-side-width) + var(--right-side-width));
+}
+
+.main {
+  flex: 1;
+}
+
+.header, .footer, .left-side, .right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  height: var(--header-height);
+  border-bottom: var(--border);
+}
+
+.header::after {
+  content: 'Header: 100px';
+}
+
+.footer {
+  margin-top: var(--block-margin);
+  height: var(--footer-height);
+  border-top: var(--border);
+}
+
+.footer::after {
+  content: 'Footer: 150px';
+}
+
+.left-side {
+  height: 100%;
+  width: var(--left-side-width);
+  border-right: var(--border);
+  
+}
+
+.left-side::after {
+  content: 'Left Side: 250px';
+}
+
+.right-side {
+  height: 100%;
+  width: var(--right-side-width);
+  border-left: var(--border);
+}
+
+.right-side::after {
+  content: 'Right Side: 200px';
+}
